@@ -1,0 +1,145 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Global Styles */
+body {
+	height: 100%;
+	overflow-x: hidden;
+	font-family: "Open Sans", sans-serif; /* Added sans-serif as fallback */
+	margin: 0;
+	animation-duration: 500ms
+}
+
+/* Dark Mode */
+.darkMode {
+	background-color: #01050a;
+	color: #fafafa;
+}
+
+/* Title Styles */
+#Title {
+	font-size: 48px;
+	text-align: center;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+/* Background Stars */
+#starsBG {
+	background-image: url("bgStars.png");
+	background-size: 48px;
+	position: fixed;
+	opacity: 0.05;
+	width: calc(100% + 24px);
+	height: calc(100% + 24px);
+	user-drag: none;
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	background-attachment: top;
+	z-index: -4;
+	left: 0;
+	top: 0;
+	animation-duration: 10s;
+	animation-name: starBGAnim;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+/* Margin Utility Class */
+.margin32px {
+	margin: 4px;
+	margin-left: 32px;
+	margin-right: 32px;
+	
+}
+
+/* Section Styles */
+.section {
+	margin: 0;
+	width: 100%;
+	height: 20vh;
+	display: flex;
+	overflow-x: overlay;
+}
+
+.section div {
+	flex-basis: 15vw;
+	flex: 0 0 15vw;
+	height: 100%;
+	position: relative;
+	display: block;
+	border-radius: 28px;
+	margin-right: 2px
+}
+
+.section div p {
+	font-size: 20px;
+	vertical-align: bottom;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: 0;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+/* Section Box with No Image */
+.noImageSectBox {
+	background-image: url("gameImages/cat.jpg");
+	background-size: 100% 100%;
+}
+.sm63Game {
+	background-image: url("gameImages/SM63.png");
+	background-size: 100% 100%;
+}
+.bonkGame {
+	background-image: url("gameImages/bonk.png");
+	background-size: 100% 100%;
+}
+
+
+
+/* Scrollbar Styles */
+*::-webkit-scrollbar {
+	height: 11px;
+	width: 11px;
+}
+
+*::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: #ffffff;
+}
+
+@keyframes starBGAnim {
+   0%   {transform: translate(-0,-0);}
+  100%   {transform: translate(-24px,-24px);}
+}
+
+.homeAdded::after {
+	content: '';
+	height: 32px;
+	background-size: 32px;
+	aspect-ratio: 1 / 1;
+	background-image: url("home.svg");
+	display: block;
+	position: relative;
+	right: 100px;
+	bottom: 37px;
+}
+
+.homeAdded {
+	margin-bottom: -37px;
+	color: white;
+}
+
+.glassContainer {
+	border-radius: 10px;;
+	background-color: rgba(255, 255, 255, 0.199);
+	backdrop-filter: blur(3px);
+	border-top: 1px solid rgba(255,255,255,0.4);
+	border-left: 1px solid rgba(255,255,255,0.3);
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.09)
+}

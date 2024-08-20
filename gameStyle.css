@@ -1,0 +1,30 @@
+#gTitleDiv {
+	overflow-y: hidden;
+	width: 230px;
+}
+a {
+	text-decoration: none;
+}
+
+#gameContainer {
+	width: 65%
+}
+#desc {
+	width: 29%;
+	margin-left: 2%;
+}
+#desc h2 {
+	margin: 0;
+	margin-left: 10px;
+}
+#desc p {
+	margin: 0;
+	margin-left: 10px;
+	margin-top: 10px
+}
+
+#inner {
+	display: flex;
+	height: 80vh;
+	width: 100%
+}
