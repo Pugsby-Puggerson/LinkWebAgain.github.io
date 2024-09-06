@@ -8,7 +8,7 @@ a {
 
 #gameContainer {
 	width: 65vw;
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	position: absolute
 }
