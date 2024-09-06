@@ -9,7 +9,8 @@ a {
 #gameContainer {
 	width: 65vw;
 	height: 100vh;
-	display: flex
+	display: flex;
+	position: absolute
 }
 #desc {
 	width: 29%;
